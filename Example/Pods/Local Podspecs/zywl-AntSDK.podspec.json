@@ -12,7 +12,7 @@
     "huchao": "huchao@antjiyi.onaliyun.com"
   },
   "source": {
-    "git": "https://github.com/q360648588/ZYWL.git",
+    "git": "git@github.com:q360648588/ZYWL.git",
     "tag": "0.0.1"
   },
   "platforms": {

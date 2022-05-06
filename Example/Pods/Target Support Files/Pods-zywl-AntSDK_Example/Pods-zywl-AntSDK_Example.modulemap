@@ -1,0 +1,6 @@
+framework module Pods_zywl_AntSDK_Example {
+  umbrella header "Pods-zywl-AntSDK_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

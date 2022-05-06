@@ -28,13 +28,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		01700013B909365BABBB49B6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		01700013B909365BABBB49B6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		05568593E7A5A23FDA844698 /* Pods-zywl-AntSDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zywl-AntSDK_Tests.debug.xcconfig"; path = "Target Support Files/Pods-zywl-AntSDK_Tests/Pods-zywl-AntSDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		1B60CA2C565CA41E352145EA /* Pods_zywl_AntSDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_zywl_AntSDK_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		410FCF37B2CD124D5760D53A /* Pods_zywl_AntSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_zywl_AntSDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		47EE5DC8588FF32A2FD3CCE3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		47EE5DC8588FF32A2FD3CCE3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		5A0E53E2C11763B5F3D50422 /* Pods-zywl-AntSDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zywl-AntSDK_Example.debug.xcconfig"; path = "Target Support Files/Pods-zywl-AntSDK_Example/Pods-zywl-AntSDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		5B4F4920F67F289781C6117E /* zywl-AntSDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = "zywl-AntSDK.podspec"; path = "../zywl-AntSDK.podspec"; sourceTree = "<group>"; };
+		5B4F4920F67F289781C6117E /* zywl-AntSDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = "zywl-AntSDK.podspec"; path = "../zywl-AntSDK.podspec"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		607FACD01AFB9204008FA782 /* zywl-AntSDK_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "zywl-AntSDK_Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -156,7 +156,6 @@
 				05568593E7A5A23FDA844698 /* Pods-zywl-AntSDK_Tests.debug.xcconfig */,
 				68238F7B8FE6218EAC91926A /* Pods-zywl-AntSDK_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -213,10 +212,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 3QL3M4X778;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 3QL3M4X778;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -227,6 +228,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -269,10 +271,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-zywl-AntSDK_Example/Pods-zywl-AntSDK_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/zywl-AntSDK/zywl_AntSDK.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/zywl_AntSDK.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -478,6 +482,8 @@
 			baseConfigurationReference = 5A0E53E2C11763B5F3D50422 /* Pods-zywl-AntSDK_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3QL3M4X778;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "zywl-AntSDK/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -493,6 +499,8 @@
 			baseConfigurationReference = 7F0341AABACA5D5B0445B5AE /* Pods-zywl-AntSDK_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3QL3M4X778;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "zywl-AntSDK/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -507,6 +515,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 05568593E7A5A23FDA844698 /* Pods-zywl-AntSDK_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 3QL3M4X778;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -529,6 +538,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 68238F7B8FE6218EAC91926A /* Pods-zywl-AntSDK_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 3QL3M4X778;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",

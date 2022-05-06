@@ -7,12 +7,20 @@
 //
 
 import UIKit
+import AntSDK
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let manager = AntCommandModule.shareInstance
+        
+        manager.getServerOtaDeviceInfo { success, error in
+            print("success =",success)
+        }
+        
+        
     }
 
     override func didReceiveMemoryWarning() {

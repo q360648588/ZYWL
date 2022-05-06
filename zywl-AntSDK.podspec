@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'zywl-AntSDK'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of zywl-AntSDK.'
+  s.version          = '0.0.1'
+  s.summary          = 'zywl蓝牙开发工具'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -21,16 +21,17 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/huchao/zywl-AntSDK'
+  s.homepage         = 'https://github.com/q360648588'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'huchao' => 'huchao@antjiyi.onaliyun.com' }
-  s.source           = { :git => 'https://github.com/huchao/zywl-AntSDK.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/q360648588/ZYWL.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
-
+  s.swift_version = '4.0'
   s.source_files = 'zywl-AntSDK/Classes/**/*'
+  s.vendored_frameworks =  ['zywl-AntSDK/Framework/*.framework']
   
   # s.resource_bundles = {
   #   'zywl-AntSDK' => ['zywl-AntSDK/Assets/*.png']
@@ -38,5 +39,5 @@ TODO: Add long description of the pod here.
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+   s.dependency 'Alamofire'
 end

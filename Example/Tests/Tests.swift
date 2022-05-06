@@ -1,5 +1,4 @@
 import XCTest
-import zywl-AntSDK
 
 class Tests: XCTestCase {
     

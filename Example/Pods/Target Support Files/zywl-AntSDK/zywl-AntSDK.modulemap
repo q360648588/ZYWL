@@ -1,0 +1,6 @@
+framework module zywl_AntSDK {
+  umbrella header "zywl-AntSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}

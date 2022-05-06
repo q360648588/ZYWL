@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'zywl-AntSDK_Example' do
+  pod 'zywl-AntSDK', :path => '../'
+
+  target 'zywl-AntSDK_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
